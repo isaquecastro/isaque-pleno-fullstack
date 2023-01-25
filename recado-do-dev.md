@@ -1,9 +1,9 @@
 # TODO
 
-[x] - Usuário deve ser capaz de realizar um login
-[x] - Usuário deve ser capaz de receber uma lista de amigos quando logado
-[x] - Usuáro deve ser capaz de deslogar
-[x] - Ir para localização no mapa ao clicar na localização de um amigo
+- [X] Usuário deve ser capaz de realizar um login 
+- [X] Usuário deve ser capaz de receber uma lista de amigos quando logado
+- [X] Usuáro deve ser capaz de deslogar
+- [X] Ir para localização no mapa ao clicar na localização de um amigo
 
 # Descrição do projeto
 

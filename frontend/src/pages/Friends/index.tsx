@@ -8,7 +8,7 @@ import FriendItem from "./components/FriendItem";
 const Friends = () => {
   const [data, setData] = useState([]);
 
-  const { checkSession, logout } = useAuth();
+  const { checkSession, token, logout } = useAuth();
 
   const [isLoading, setIsLoading] = useState(true);
   const [searchDone, setSearchDone] = useState(false);
@@ -40,7 +40,7 @@ const Friends = () => {
   }, [checkSession, searchDone]);
 
   return (
-    <div className="min-h-full py-12 px-4 sm:px-6 lg:px-8">
+    <div style={{ display: checkSession && token ? "block": "none" }} className="min-h-full py-12 px-4 sm:px-6 lg:px-8">
       <div className="lg:flex lg:items-center lg:justify-between">
         <div className="min-w-0 flex-1">
           <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
